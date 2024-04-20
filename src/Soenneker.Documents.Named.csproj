@@ -41,6 +41,6 @@
 
         <PackageReference Include="Soenneker.Documents.Document" Version="2.1.762" />
 
-        <PackageReference Include="Soenneker.Entities.Named" Version="2.1.344" />
+        <PackageReference Include="Soenneker.Entities.Named" Version="2.1.345" />
     </ItemGroup>
 </Project>

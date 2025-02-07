@@ -39,7 +39,7 @@
 
         
 
-        <PackageReference Include="Soenneker.Documents.Document" Version="3.0.2140" />
+        <PackageReference Include="Soenneker.Documents.Document" Version="3.0.2142" />
 
         <PackageReference Include="Soenneker.Entities.Named" Version="3.0.1013" />
     </ItemGroup>

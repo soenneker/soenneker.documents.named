@@ -9,5 +9,5 @@ public abstract class NamedDocument : Document.Document, INamedDocument
 {
     [JsonPropertyName("name")]
     [JsonProperty("name")]
-    public string Name { get; set; } = default!;
+    public virtual string Name { get; set; } = null!;
 }

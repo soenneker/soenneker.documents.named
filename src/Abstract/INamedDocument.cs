@@ -1,6 +1,7 @@
 ﻿using System.Text.Json.Serialization;
 using Newtonsoft.Json;
 using Soenneker.Documents.Document.Abstract;
+using Soenneker.Entities.Named.Abstract;
 
 namespace Soenneker.Documents.Named.Abstract;
 
@@ -10,6 +11,7 @@ namespace Soenneker.Documents.Named.Abstract;
 /// </summary>
 public interface INamedDocument : IDocument
 {
+    /// <inheritdoc cref="INamedEntity.Name"/>
     [JsonPropertyName("name")]
     [JsonProperty("name")]
     string Name { get; set; }

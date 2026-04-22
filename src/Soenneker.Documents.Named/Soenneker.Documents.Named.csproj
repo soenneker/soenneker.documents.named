@@ -40,6 +40,6 @@
         <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
         <None Include="..\..\icon.png" Pack="true" PackagePath="\" />
         <PackageReference Include="Soenneker.Documents.Document" Version="4.0.2647" />
-        <PackageReference Include="Soenneker.Entities.Named" Version="4.0.1257" />
+        <PackageReference Include="Soenneker.Entities.Named" Version="4.0.1259" />
     </ItemGroup>
 </Project>

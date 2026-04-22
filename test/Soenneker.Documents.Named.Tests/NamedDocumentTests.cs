@@ -1,16 +1,15 @@
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.Documents.Named.Tests;
 
-[Collection("Collection")]
-public class NamedDocumentTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public class NamedDocumentTests : HostedUnitTest
 {
-    public NamedDocumentTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public NamedDocumentTests(Host host) : base(host)
     {
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 

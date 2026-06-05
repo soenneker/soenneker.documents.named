@@ -11,7 +11,9 @@ namespace Soenneker.Documents.Named.Abstract;
 /// </summary>
 public interface INamedDocument : IDocument
 {
-    /// <inheritdoc cref="INamedEntity.Name"/>
+    /// <summary>
+    /// Gets or sets name.
+    /// </summary>
     [JsonPropertyName("name")]
     [JsonProperty("name")]
     string Name { get; set; }

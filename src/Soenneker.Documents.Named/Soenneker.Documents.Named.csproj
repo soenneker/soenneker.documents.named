@@ -39,7 +39,7 @@
         <None Include="..\..\README.md" Pack="true" PackagePath="\" />
         <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
         <None Include="..\..\icon.png" Pack="true" PackagePath="\" />
-        <PackageReference Include="Soenneker.Documents.Document" Version="4.0.2663" />
+        <PackageReference Include="Soenneker.Documents.Document" Version="4.0.2665" />
         <PackageReference Include="Soenneker.Entities.Named" Version="4.0.1264" />
     </ItemGroup>
 </Project>

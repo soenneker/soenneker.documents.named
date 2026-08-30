@@ -6,13 +6,12 @@ using Soenneker.Entities.Named.Abstract;
 namespace Soenneker.Documents.Named.Abstract;
 
 /// <summary>
-/// Essentially provides a Name string property on Document <para/>
-/// <inheritdoc cref="IDocument"/>
+/// Defines a document that has a name.
 /// </summary>
 public interface INamedDocument : IDocument
 {
     /// <summary>
-    /// Gets or sets name.
+    /// Gets or sets the document's display name.
     /// </summary>
     [JsonPropertyName("name")]
     [JsonProperty("name")]

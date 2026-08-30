@@ -5,20 +5,40 @@
 
 # Soenneker.Documents.Named
 
-Essentially provides a Name string property on Document.
+Provides a document model with an additional serialized `Name` field.
 
-## Install
+## Installation
 
 ```bash
 dotnet add package Soenneker.Documents.Named
 ```
 
-## What you get
+## Usage
 
-- `INamedDocument` — Essentially provides a Name string property on Document.
+```csharp
+using Soenneker.Documents.Named;
 
-## API at a glance
+var document = new NamedDocument
+{
+    DocumentId = "status-active",
+    PartitionKey = "statuses",
+    CreatedAt = DateTimeOffset.UtcNow,
+    Name = "Active"
+};
+```
 
-| API | What it does | Result / important behavior |
-| --- | --- | --- |
-| `INamedDocument.Name` | Gets or sets name. | Gets or sets name. |
+The model serializes these fields with both System.Text.Json and Newtonsoft.Json:
+
+| Property | JSON name |
+| --- | --- |
+| `DocumentId` | `id` |
+| `PartitionKey` | `partitionKey` |
+| `CreatedAt` | `createdAt` |
+| `ModifiedAt` | `modifiedAt` |
+| `Name` | `name` |
+
+`Id` remains the inherited, serializer-ignored composite convenience value. See `Soenneker.Documents.Document` for its partition-key and colon parsing rules.
+
+`Name` is virtual so specialized documents can override it. The class does not initialize or validate names, identifiers, or timestamps; populate and validate them before persistence.
+
+Use `INamedDocument` when APIs should accept any document carrying the same identity, timestamp, and name contract.

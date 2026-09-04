@@ -4,6 +4,7 @@ using Soenneker.Documents.Named.Abstract;
 
 namespace Soenneker.Documents.Named;
 
+/// <inheritdoc cref="INamedDocument" />
 public class NamedDocument : Document.Document, INamedDocument
 {
     [JsonPropertyName("name")]

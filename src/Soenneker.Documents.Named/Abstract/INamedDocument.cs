@@ -1,7 +1,6 @@
-﻿using System.Text.Json.Serialization;
+using System.Text.Json.Serialization;
 using Newtonsoft.Json;
 using Soenneker.Documents.Document.Abstract;
-using Soenneker.Entities.Named.Abstract;
 
 namespace Soenneker.Documents.Named.Abstract;
 

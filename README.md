@@ -27,7 +27,7 @@ var document = new NamedDocument
 };
 ```
 
-The model serializes these fields with both System.Text.Json and Newtonsoft.Json:
+The model serializes these fields with System.Text.Json:
 
 | Property | JSON name |
 | --- | --- |

@@ -1,5 +1,4 @@
 ﻿using System.Text.Json.Serialization;
-using Newtonsoft.Json;
 using Soenneker.Documents.Document.Abstract;
 
 namespace Soenneker.Documents.Named.Abstract;
@@ -13,6 +12,5 @@ public interface INamedDocument : IDocument
     /// Gets or sets the document's display name.
     /// </summary>
     [JsonPropertyName("name")]
-    [JsonProperty("name")]
     string Name { get; set; }
 }
